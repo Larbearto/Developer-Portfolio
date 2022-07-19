@@ -10,7 +10,7 @@ const Footer = () => {
 	const [isFormSubmitted, setIsFormSubmitted] = useState(false)
 	const [loading, setLoading] = useState(false)
 
-	const { username, email, message } = formData
+	const { username, email, message } = formData // destructuring
 
 	const handleChangeInput = (e) => {
 		const { name, value } = e.target
@@ -54,6 +54,7 @@ const Footer = () => {
 					</a>
 				</div>
 			</div>
+
 			{!isFormSubmitted ? (
 				<div className='app__footer-form app__flex'>
 					<div className='app__flex'>

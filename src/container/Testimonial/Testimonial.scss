@@ -9,7 +9,7 @@
   min-height: 320px;
   background-color: var(--white-color);
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;*/
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
@@ -17,8 +17,8 @@
   transition: all 0.3s ease-in-out;
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -82,29 +82,30 @@
   }
 }
 
-.app__testimonial-btns {
-  flex-direction: row;
-  margin-top: 1rem;
+  .app__testimonial-btns {
+    flex-direction: row;
+    margin-top: 1rem;
 
-  div {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--gray-color);
+    div {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--gray-color);
 
-    margin: 1rem;
-    transition: all 0.3s ease-in-out;
+      margin: 1rem;
+      transition: all 0.3s ease-in-out;
 
-    svg {
-      width: 30px;
-      height: 30px;
-      color: var(--secondary-color);
-    }
-
-    &:hover {
-      background-color: var(--secondary-color);
 
       svg {
+        width: 30px;
+        height: 30px;
+        color: var(--secondary-color);
+      }
+
+      &:hover {
+        background-color: var(--secondary-color);
+
+        svg {
         color: var(--white-color)
       }
     }
@@ -121,7 +122,7 @@
   }
 }
 
-.app__testimonial_brands {
+.app__testimonial-brands {
   width: 80%;
   flex-wrap: wrap;
   margin-top: 2rem;
